@@ -1,0 +1,109 @@
+html {
+    background-color: #111111;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+fieldset {
+   background-color: #021546; 
+   border: none;
+   width: 500px;
+   margin: 20px auto;
+   height: 600px;
+   border-radius: 15px;
+   position: relative;
+}
+
+
+fieldset::after, fieldset::before {
+    content: "";
+    position: absolute;
+    height: 600px;
+    width: 515px;
+    background-image: conic-gradient(red, blue, red, blue, red);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 9.5px;
+}
+
+fieldset::before{
+    filter: blur(1.5rem);
+    opacity: 0.9;
+}
+
+.stats {
+    width: 90%;
+    height: 25px;
+    background-color: rgb(200, 199, 199);
+    margin: 10px auto 5px auto;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.stats p {
+    display: inline;
+    margin: 15px 35px 0 35px;
+}
+
+.monsterStats {
+    background-color: rgb(255, 32, 32);
+    width: 90%;
+    height: 27px;
+    margin: 0 auto 5px auto;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.monsterStats p {
+    display: inline;
+    font-size: 13px;
+    margin: 1px 10px 0 15px;
+    font-family: sans-serif;
+}
+
+.img {
+    width: 90%;
+    object-fit: cover;
+    height: 400px;
+    margin: 0px 5% 0px;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://s8.uupload.ir/files/msg23372500-15503_3vri.jpg);
+}
+
+.buttonDiv {
+    width: 90%;
+    height: 33px;
+    background-color: orange;
+    border-radius: 10px 10px 0 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonDiv button {
+    height: 26px;
+    margin: 3px 4px;
+    border-radius: 5px;
+    border: solid 3px rgb(197, 231, 250);
+    font-family: tahoma;
+    padding-bottom: 4px;
+    cursor: pointer;
+}
+
+.text {
+    background-color: black;
+    color: aliceblue;
+    width: calc(90% - 12px);
+    height: 65px;
+    margin: 0 auto;
+    padding: 6px;
+    border-radius: 0 0 10px 10px;
+}
