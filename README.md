@@ -1,0 +1,3 @@
+this is my first ever project with Java Script . it was inspired by the RGP game in freecodecamp .
+that had a major problem , not knowing where you were...
+so i tried solving it by giving it images
